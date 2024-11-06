@@ -51,26 +51,37 @@ const Footer = () => {
     //         </div>
     //       </div>
     //     </footer>
-        
+
     <footer className="w-full bg-[#003366] sm:px-16 pb-8 divide-y divide-zinc-500 mb-3">
       <div className=" max-container px-4 grid max-lg:place-items-center xl:grid-cols-[500px_1fr]">
         <div className="md:flex items-center gap-3 mb-10 xl:mb-0">
-        <div className="flex-col justify-center ">
-        <div className="px-[40%] py-4">
-        <img src={footerIcon} alt="logo" className="h-10 mt-1 " />
-        </div>
-          <p className="text-white  text-center ">
-            <span className="font-bold  text-orange-500 py-2" style={{fontSize:'22px'}}>Ventri<span className="text-white">Pay</span></span><br />
-            
-            <span className="text-sm">Shaping the future of crossborder <br />Payment in Africa.</span>
-            
-          </p>
-        </div>
+          <div className="flex-col justify-center ">
+            <div className="px-[40%] py-4">
+              <img src={footerIcon} alt="logo" className="h-10 mt-1 " />
+            </div>
+            <p className="text-white  text-center ">
+              <span
+                className="font-bold  text-orange-500 py-2"
+                style={{ fontSize: "22px" }}
+              >
+                Ventri<span className="text-white">Pay</span>
+              </span>
+              <br />
+
+              <span className="text-sm">
+                Shaping the future of crossborder <br />
+                Payment in Africa.
+              </span>
+            </p>
+          </div>
         </div>
         <div className="md:flex hidden flex-1 pt-16 flex-col lg:flex-row justify-between">
           {footerLinks.map((footer) => {
             return (
-              <div key={footer.title} className="px-5 max-lg:text-center max-lg:mb-5">
+              <div
+                key={footer.title}
+                className="px-5 max-lg:text-center max-lg:mb-5"
+              >
                 <h4 className="text-[#FF6600] text-sm font-semibold mb-5 uppercase">
                   {footer.title}
                 </h4>
@@ -87,20 +98,20 @@ const Footer = () => {
         </div>
       </div>
       <div className="max-container flex flex-col xl:flex-row justify-between items-center ">
-             <div className="flex  ">
-               {socialMedia.map((icon, index) => {
-                 return (
-                  <div className=" " key={index}>
-                     <a className="" href={icon.url} target="_blank" >
-                     <img src={icon.src} alt="" className="w-16 " />
-                     </a>
-                  </div>
-                 );
-              })}
-             </div>
-             <div className="px-4">
-               <p className="text-sm text-white ">Copyright &copy;2024 VentriPay</p>
-             </div>
+        <div className="flex  ">
+          {socialMedia.map((icon, index) => {
+            return (
+              <div className=" " key={index}>
+                <a className="" href={icon.url} target="_blank">
+                  <img src={icon.src} alt="" className="w-16 " />
+                </a>
+              </div>
+            );
+          })}
+        </div>
+        <div className="px-4">
+          <p className="text-sm text-white ">Copyright &copy;2024 VentriPay</p>
+        </div>
       </div>
     </footer>
   );
