@@ -1,0 +1,12 @@
+.bg-default{
+    background-color: #11857e;
+}
+.text-default{
+    color: #178c84;
+}
+.bg-default p{
+    color: rgb(220, 223, 223);
+}
+.shadow{
+    box-shadow: 10px;
+}
